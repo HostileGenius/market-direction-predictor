@@ -1,9 +1,9 @@
 from flask import Blueprint, jsonify
-from backend.utils.data_loader import load_market_data
-from backend.indicators.technicals import add_all_indicators
-from backend.model.features import build_features
-from backend.model.predict import load_model, predict_probability, interpret_prediction
-from backend.utils.market_api import fetch_candles
+from utils.data_loader import load_market_data
+from indicators.technicals import add_all_indicators
+from model.features import build_features
+from model.predict import load_model, predict_probability, interpret_prediction
+from utils.market_api import fetch_candles
 
 import os
 

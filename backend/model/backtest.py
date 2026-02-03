@@ -1,8 +1,8 @@
 import pandas as pd
 import joblib
-from backend.utils.market_api import fetch_candles
-from backend.indicators.technicals import add_all_indicators
-from backend.model.features import build_features, create_target
+from utils.market_api import fetch_candles
+from indicators.technicals import add_all_indicators
+from model.features import build_features, create_target
 
 def backtest_model():
     print("📊 Running backtest...")

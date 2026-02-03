@@ -3,9 +3,9 @@ import os
 from sklearn.linear_model import LogisticRegression
 from sklearn.model_selection import train_test_split
 
-from backend.utils.data_loader import load_market_data
-from backend.indicators.technicals import add_all_indicators
-from backend.model.features import build_features, create_target
+from utils.data_loader import load_market_data
+from indicators.technicals import add_all_indicators
+from model.features import build_features, create_target
 
 
 
