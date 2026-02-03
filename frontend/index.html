@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Market Direction Probability Tool</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<div class="container">
+    <h1>📈 Market Direction Probability</h1>
+
+    <div id="bias" class="badge">Loading...</div>
+    <div id="confidence" class="confidence"></div>
+
+    <div class="probability">
+        <div>
+            <label>UP</label>
+            <div class="bar">
+                <div id="upBar" class="fill up"></div>
+            </div>
+            <span id="upValue">0%</span>
+        </div>
+
+        <div>
+            <label>DOWN</label>
+            <div class="bar">
+                <div id="downBar" class="fill down"></div>
+            </div>
+            <span id="downValue">0%</span>
+        </div>
+    </div>
+
+    <p id="recommendation" class="recommendation"></p>
+
+    <button onclick="fetchPrediction()">Ref
